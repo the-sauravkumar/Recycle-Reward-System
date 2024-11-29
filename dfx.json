@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "recycle_backend": {
+      "main": "src/recycle_backend/main.mo",
+      "type": "motoko"
+    },
+    "recycle_frontend": {
+      "dependencies": [
+        "recycle_backend"
+      ],
+      "source": [
+        "src/recycle_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "recycle_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
