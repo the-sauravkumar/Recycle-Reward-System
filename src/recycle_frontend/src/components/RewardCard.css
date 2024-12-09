@@ -1,0 +1,231 @@
+.reward-card-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 20px; /* Add spacing between cards */
+  flex-wrap: wrap; /* Adjust for smaller screens */
+  /* height: 100vh; Ensure it takes the full viewport height */
+}
+
+
+
+.reward-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #001f3f, #3f0071, #000428); /* Galaxy-inspired gradient */
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  height: 220px;
+  width: 70%;
+  position: relative;
+  text-align: center;
+}
+
+.card-content {
+  margin-bottom: 20px;
+}
+
+.card-content h2 {
+  font-size: 1.8rem;
+  background: linear-gradient(40deg, #ea00ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.recycle-now-btn {
+  background: linear-gradient(to left, #5a5df5, #8a65eb);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.recycle-now-btn:hover {
+  transform: translateX(-50%) scale(1.1);
+  background: linear-gradient(to right, #8a65eb, #5a5df5);
+}
+
+.total-recycled-card {
+  background: linear-gradient(to bottom, #001f3f, #3f0071, #000428);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  height: 220px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.total-recycled-card h2 {
+  font-size: 1.8rem;
+  background: linear-gradient(40deg, #ea00ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.total-recycled-card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(11, 11, 11, 0.8); /* Dim background */
+  z-index: 999; /* Place overlay above content */
+  display: flex;
+  justify-content: flex-end; /* Align modal to the right */
+}
+
+/* Modal Content */
+.modal-content {
+  background: #ffffff;
+  width: 50%; /* Take only half of the screen width */
+  height: 100vh; /* Full height for modal */
+  padding: 20px;
+  border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+}
+
+/* Modal Title */
+.modal-content h2 {
+  color: #5a5df5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit and Cancel Buttons */
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.form-buttons button[type="submit"] {
+  background-color: #5a5df5;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background-color: #4a4dcf;
+  transform: scale(1.05);
+}
+
+/* Cancel Button */
+.form-buttons button[type="button"] {
+  background-color: #ccc;
+  color: black;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.form-buttons button[type="button"]:hover {
+  background-color: #aaa;
+  transform: scale(1.05);
+}
+
+/* General Button Styles */
+button {
+  padding: 12px 24px; /* Adds more padding */
+  margin: 10px 5px; /* Space between buttons */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button Styles */
+button[type="submit"] {
+  background-color: #5a5df5; /* Primary blue */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button[type="submit"]:hover {
+  background-color: #4b4cd9; /* Darker blue */
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Cancel Button Styles */
+button[type="button"] {
+  background-color: #f3f3f3; /* Light gray */
+  color: #333; /* Dark text */
+  border: 1px solid #ccc; /* Subtle border */
+}
+
+button[type="button"]:hover {
+  background-color: #e0e0e0; /* Darker gray */
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Aligning Buttons in the Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Spacing between form elements */
+}
+
+button[type="submit"], button[type="button"] {
+  align-self: center; /* Align buttons to the left */
+}

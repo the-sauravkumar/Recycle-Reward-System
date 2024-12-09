@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 20px;
+}
+
+.leaderboard-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+table.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Modern shadow for depth */
+}
+
+table.leaderboard-table thead {
+  background: linear-gradient(90deg, #4caf50, #81c784); /* Modern gradient */
+  color: #fff; /* White text for header */
+}
+
+table.leaderboard-table th,
+table.leaderboard-table td {
+  border: none; /* Remove borders for a cleaner look */
+  padding: 15px;
+  text-align: center; /* Center-align content */
+  font-size: 16px;
+}
+
+table.leaderboard-table th {
+  font-weight: bold;
+  text-transform: uppercase; /* Capitalize header text */
+}
+
+table.leaderboard-table tbody tr:nth-child(even) {
+  background-color: #f8f8f8; /* Subtle zebra striping */
+}
+
+table.leaderboard-table tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+  transform: scale(1.01); /* Subtle zoom effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+table.leaderboard-table td {
+  color: #555; /* Softer text color */
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.no-data {
+  color: #888;
+  font-style: italic;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4caf50; /* Green title to match the header */
+  margin-bottom: 20px;
+}

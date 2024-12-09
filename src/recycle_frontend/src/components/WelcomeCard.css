@@ -1,0 +1,81 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Adjust for smaller screens */
+  margin-top: 30px;
+  gap: 30px; /* Add spacing between cards */
+}
+
+.welcome-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #001f3f, #3f0071, #000428); /* Unified gradient */
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Similar to RewardCard */
+}
+
+.welcome-text h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  background: linear-gradient(40deg, #ea00ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome-text p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* Equal spacing between stats */
+  width: 100%;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(145deg, #1b1f36, #262b44); /* Consistent with RewardCard style */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.stat p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #a5a5a5;
+}

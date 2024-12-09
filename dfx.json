@@ -4,6 +4,10 @@
       "main": "src/recycle_backend/main.mo",
       "type": "motoko"
     },
+    "nft": {
+      "main": "src/NFT/nft.mo",
+      "type": "motoko"
+    },
     "recycle_frontend": {
       "dependencies": [
         "recycle_backend"

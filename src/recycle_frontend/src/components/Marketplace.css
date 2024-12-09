@@ -1,0 +1,72 @@
+/* Dark Mode Marketplace.css */
+
+.marketplace-container {
+  padding: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #1e1e2f; /* Dark background */
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Slightly stronger shadow */
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  color: #ffffff; /* White text for dark mode */
+  margin-bottom: 20px;
+}
+
+.marketplace-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.marketplace-card {
+  background-color: #2e2e3e; /* Slightly lighter dark color for cards */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Shadow matches dark mode */
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.marketplace-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /* Slightly stronger shadow on hover */
+}
+
+.nft-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #ffffff; /* White text for card titles */
+  margin-bottom: 15px;
+}
+
+.buy-button {
+  background-color: #4caf50;
+  color: #ffffff; /* White text for the button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #45a049;
+}
+
+.marketplace-card:nth-child(odd) {
+  background-color: #3a3a4a; /* Slight variation for alternating cards */
+}
